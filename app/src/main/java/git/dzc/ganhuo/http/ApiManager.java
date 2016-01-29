@@ -4,6 +4,7 @@ import android.util.Log;
 
 import java.io.IOException;
 
+import git.dzc.ganhuo.module.DayResult;
 import git.dzc.ganhuo.module.NewsResult;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -36,5 +37,9 @@ public class ApiManager {
 
     public Observable<NewsResult> getNewsData(String type, int size, int page){
         return apiService.getData(type,size,page);
+    }
+
+    public Observable<DayResult> getDayData(int year,int month,int day){
+        return apiService.getDayDay(year, month, day);
     }
 }

@@ -1,5 +1,6 @@
 package git.dzc.ganhuo.http;
 
+import git.dzc.ganhuo.module.DayResult;
 import git.dzc.ganhuo.module.NewsResult;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -15,4 +16,8 @@ public interface ApiService {
             @Path("type") String type,
             @Path("size") int size,
             @Path("page") int page);
+
+    @GET("day/{year}/{month}/{day}")
+    Observable<DayResult> getDayDay(@Path("year") int year,@Path("month") int month,@Path("day") int day);
+
 }

@@ -3,4 +3,18 @@
     <color name="colorPrimary">#743fb5</color>
     <color name="colorPrimaryDark">#743fb5</color>
     <color name="colorAccent">#FF4081</color>
+
+    <integer-array name="refresh_colors">
+        <item>@color/purpul</item>
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </integer-array>
+
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="purpul">#743fb5</color>
 </resources>
