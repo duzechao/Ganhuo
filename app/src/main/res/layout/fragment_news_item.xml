@@ -3,20 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:frasco="http://schemas.android.com/tools"
     android:background="?attr/selectableItemBackground"
     android:clickable="true"
     app:cardCornerRadius="6dp"
     app:cardElevation="20dp"
-    android:layout_margin="10dp"
-    >
+    android:layout_margin="10dp">
 
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/img"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:scaleType="center"
-        android:visibility="gone"/>
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,13 +35,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:layout_toLeftOf="@+id/time"
-                android:layout_marginRight="16dp"/>
+                android:layout_alignParentRight="true"/>
             <TextView
                 android:id="@+id/time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:layout_below="@+id/user_name"
+                android:layout_marginTop="5dp"
                 android:layout_alignParentRight="true"/>
 
         </RelativeLayout>
